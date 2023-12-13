@@ -40,6 +40,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 40px;
 }
 
 .new-button {
@@ -71,6 +74,9 @@
   }
 }
 
+.paragraph{
+  color:darkgrey;
+}
 
 @media (min-width: 600px) {
   .main-container {
