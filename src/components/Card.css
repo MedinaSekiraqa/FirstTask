@@ -1,11 +1,15 @@
+
 .main-container {
+  
   justify-items: center;
   justify-content: center;
+  align-items: center; /* Center vertically */
   grid-gap: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: stretch;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -15,16 +19,13 @@
   padding: 20px;
   margin: 10px;
   box-sizing: border-box;
-  height: 100%;/*  Set a fixed height for the cards */
+  height: 100%;
   font-size: 1em;
-  
 }
 
 .header {
-  
   display: flex;
   justify-content: space-between;
- 
 }
 
 .logo {
@@ -32,7 +33,6 @@
   height: 2em;
   border-radius: 50%;
   overflow: hidden;
-  /*margin: 10px;*/
   max-width: 100%;
 }
 
@@ -55,7 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px; /* Add margin to separate the button from the content */
+  margin-bottom: 10px;
 }
 
 .download-button {
@@ -67,20 +67,19 @@
   width: 40%;
   align-self: flex-start;
   margin-top: auto;
-   
 
   @media (min-width: 600px) {
-    width: 40%; /* Adjust width for larger screens as needed */
+    width: 40%;
   }
 }
 
-.paragraph{
-  color:darkgrey;
+.paragraph {
+  color: darkgrey;
 }
 
 @media (min-width: 600px) {
   .main-container {
-    grid-template-columns: 20em 20em 20em;
+    grid-template-columns: repeat(auto, minmax(250px, 1fr));
   }
 
   .main {
