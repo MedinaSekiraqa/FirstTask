@@ -40,46 +40,63 @@ const containerStyle = {
 };
 
 const cardStyle = {
-  '@media (max-width: 600px)': {
-    flex: '0 0 100%', // Full width on small screens
-  },
-  flex: '0 0 calc(33.33% - 20px)',
+  flex: '0 0 calc(33.33% - 20px)',  
   boxSizing: 'border-box',
   margin: '10px',
   padding: '10px',
-  display: 'flex',
-  flexDirection: 'column', // Align items in column direction
+  display: 'grid',
+  flexDirection: 'column',
+  '@media (max-width: 600px)': {
+    flexDirection: 'column',  
+  },
 };
+
 
 const logoTextContainer = {
   display: 'flex',
-  alignItems: 'center', // Align items vertically in the center
+  flexDirection: 'row', 
+  alignItems: 'center', 
+  justifyContent: 'center',
 };
 
 const logoStyle = {
-  width: '50px',
-  height: '50px',
+  width: '50px', 
+  height: '50px', 
   marginRight: '10px',
-  
-  borderRadius: '50%', 
+  borderRadius: '50%',
   border: '2px solid lightblue',
-  alignSelf: 'center', 
+  alignSelf: 'center',
 };
 
 const textContainer = {
-  display: 'flex',
-  flexDirection: 'column',
+  display: 'grid',
+  gridTemplateColumns: '1fr',  
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: '10px',  
   marginBottom: '20px',
+  '@media (max-width: 600px)': {
+    gridTemplateRows: 'auto',  
+  },
 };
+
+
 
 const titleStyle = {
   fontWeight: 'bold',
   marginBottom: '5px',
+  fontSize: '1.5em',
+  '@media (max-width: 600px)': {
+    fontSize: '1.2em',
+  },
 };
 
 const textStyle = {
   marginBottom: '1px',
-  fontSize: '14px',
+  fontSize: '1em',
+  '@media (max-width: 600px)': {
+    fontSize: '0.8em',
+  },
 };
 
 
