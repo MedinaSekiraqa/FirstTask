@@ -37,6 +37,7 @@ const containerStyle = {
   flexWrap: 'wrap',
   maxWidth: '1000px',
   margin: 'auto',
+  
 };
 
 const cardStyle = {
@@ -46,9 +47,7 @@ const cardStyle = {
   padding: '10px',
   display: 'grid',
   flexDirection: 'column',
-  '@media (max-width: 600px)': {
-    flexDirection: 'column',  
-  },
+  
 };
 
 
@@ -70,15 +69,21 @@ const logoStyle = {
 
 const textContainer = {
   display: 'grid',
-  gridTemplateColumns: '1fr',  
+  gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',  // Responsive layout
   alignItems: 'center',
   justifyContent: 'center',
-  padding: '10px',  
+  padding: '20px',  
   marginBottom: '20px',
-  '@media (max-width: 600px)': {
-    gridTemplateRows: 'auto',  
-  },
+  textAlign: 'center',
+  //background: '#f0f0f0',
+  //borderRadius: '30px',
+  //boxShadow: '0 0 50px rgba(0, 0, 0, 0.1)',
+  //transition: 'background-color 0.3s ease',
 };
+
+
+
+
 
 
 
@@ -98,6 +103,7 @@ const textStyle = {
     fontSize: '0.8em',
   },
 };
+
 
 
 export default MyComponent;
